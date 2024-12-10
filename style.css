@@ -12,13 +12,13 @@ body {
 }
 
 /* Global */
-.dark{
-padding: 15px;
-background: #35424a;
-color: #ffffff;
-margin: 10px 0;
-display: flex;
-flex-direction: column;
+.dark {
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -50,6 +50,7 @@ header div {
 ul {
     list-style: none;
     display: flex;
+    padding: 0;
 }
 
 header li {
@@ -152,31 +153,32 @@ footer {
 
 /* about */
 
-#main div{
-display: flex;
-justify-content: space-between;
-margin-top: 20px;
+#main div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
-.page-title{
+.page-title {
     padding: 10px 0;
 }
 
-article#main-col{
+article#main-col {
     width: 60%;
 }
 
-aside#sidebar{
+aside#sidebar {
     width: 30%;
 }
 
 /* Services */
-#services{
+#services {
     display: flex;
     padding: 0;
     flex-direction: column;
 }
-ul#services li{
+
+ul#services li {
     list-style: none;
     padding: 20px;
     border: #cccccc solid 1px;
@@ -185,23 +187,83 @@ ul#services li{
     padding-bottom: 10px;
 }
 
-ul#services li h3,p{
+ul#services li h3,
+p {
     margin: 10px 0;
 }
 
-form div{
-display: flex;
-flex-direction: column;
+form div {
+    display: flex;
+    flex-direction: column;
+
 }
 
-.quote{
-  margin-top: 20px;  
+.quote {
+    margin-top: 20px;
 }
 
-input, textarea{
+input,
+textarea {
     width: 70%;
 }
 
+#btn {
+    width: 30%;
+}
+
+
 @media (max-width: 768px) {
-    
+    header div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    #newsletter div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #newsletter input[type="email"] {
+        width: auto;
+        margin: 5px 0;
+    }
+
+    #newsletter div form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #boxes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #boxes div img {
+        width: 60%;
+    }
+
+    #main div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside#sidebar {
+        width: 60%;
+    }
+
+    .dark form {
+        width: 200px;
+    }
+
+    #btn {
+        width: 70%;
+    }
+
 }
